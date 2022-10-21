@@ -49,7 +49,7 @@ export default function Details() {
   const getComments = async () => {
     const docRef = doc(db, "posts", routeData.id);
     const unsubscribe = onSnapshot(docRef, (snapshot) => {
-      setAllMessages(snapshot.data().comments);
+      setAllMessages(snapshot.data()?.comments);
     });
     return unsubscribe;
   };
@@ -58,6 +58,7 @@ export default function Details() {
     if (!router.isReady) return;
     getComments();
   }, [router.isReady]);
+
   return (
     <div>
       <Message {...routeData}></Message>
