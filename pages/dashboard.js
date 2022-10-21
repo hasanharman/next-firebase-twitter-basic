@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { auth, db } from "../utils/Firebase";
+import { auth, db } from "../utils/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -16,7 +16,7 @@ import { BsTrash2Fill } from "react-icons/bs";
 import { AiFillEdit } from "react-icons/ai";
 import { toast } from "react-toastify";
 
-function dashboard() {
+function Dashboard() {
   const route = useRouter();
   const [user, loading] = useAuthState(auth);
   const [posts, setPosts] = useState([]);
@@ -81,4 +81,4 @@ function dashboard() {
   );
 }
 
-export default dashboard;
+export default Dashboard;

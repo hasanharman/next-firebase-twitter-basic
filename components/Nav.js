@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { auth } from "../utils/Firebase";
+import { auth } from "../utils/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useEffect } from "react";
 
@@ -9,7 +9,7 @@ function Nav() {
   return (
     <nav className="flex justify-between items-center py-10">
       <Link href="/">
-        <button className="text-lg font-medium">Harman's Twitter</button>
+        <button className="text-lg font-medium">Creatweeter</button>
       </Link>
       <ul className="flex items-center gap-10">
         {!user && (

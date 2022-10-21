@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import Message from "../components/Message";
-import { db, auth } from "../utils/Firebase";
+import { db, auth } from "../utils/firebase";
 import { toast } from "react-toastify";
 import { useEffect, useState } from "react";
 import {

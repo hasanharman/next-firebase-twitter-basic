@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Message from "../components/Message";
-import { db } from "../utils/Firebase";
+import { db } from "../utils/firebase";
 
 export default function Home() {
   const [allPosts, setAllPosts] = useState([]);
@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Harman's Twitter</title>
+        <title>Twitter</title>
         <meta name="description" content="A twitter for Harman" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
