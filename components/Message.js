@@ -1,5 +1,3 @@
-
-
 function Message({children, avatar, username, description}) {
   return (
     <div className="bg-white p-8 border-b-2 rounded-lg">
